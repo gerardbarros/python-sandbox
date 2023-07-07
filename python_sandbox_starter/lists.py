@@ -8,35 +8,38 @@ fruits = ["Apples", "Oranges", "Grapes", "Mangoes"]
 # numbers2 = list((2, 4, 6, 8))
 
 # Get a value
-print(fruits[1])
+# print(fruits[1])
 
-# Get length
-print(len(fruits))
+# # Get length
+# print(len(fruits))
 
-# Add / append to list
-fruits.append("Peaches")
+# # Add / append to list
+# fruits.append("Peaches")
 
-# Remove from list
-fruits.remove("Grapes")
+# # Remove from list
+# fruits.remove("Grapes")
 
-# insert into position
-fruits.insert(2, "Strawberries")
+# # insert into position
+# fruits.insert(2, "Strawberries")
 
-# Change values
-fruits[0] = "Blueberry"
+# # Change values
+# fruits[0] = "Blueberry"
 
-# Remove with pop (in position)
-fruits.pop(2)
+# # Remove with pop (in position)
+# fruits.pop(2)
 
-# Reverse
-fruits.reverse()
+# # Reverse
+# fruits.reverse()
 
-# Sort by alpha order
-fruits.sort()
+# # Sort by alpha order
+# fruits.sort()
 
-# Reverse sort
-fruits.sort(reverse=True)
+# # Reverse sort
+# fruits.sort(reverse=True)
 
 
-
+# Can use custom sort (like length of string)
+fruits.sort(key = lambda val: len(val))
 print(fruits)
+
+#List comprehension
