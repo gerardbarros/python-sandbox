@@ -42,4 +42,12 @@ fruits = ["Apples", "Oranges", "Grapes", "Mangoes"]
 fruits.sort(key = lambda val: len(val))
 print(fruits)
 
-#List comprehension
+# List comprehension
+# Go through every value in range 5 and call it i and add val to array 
+arr = [i for i in range(6)]
+print(arr)
+
+# 2D List 
+# arr = [[0] * 4] gives an arr of size 4 with all 0s; if we want to add that arr to an outer arr 4x use 2D list:
+arr2D = [[0] * 4 for i in range(4)]
+print(arr2D)

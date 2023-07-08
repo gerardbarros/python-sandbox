@@ -17,3 +17,10 @@ str = "hello world"
 
 # Capitalize str
 print(str.capitalize())
+
+# ASCII value
+print(ord("a"))
+
+# Combine a list of strings (with an empty string delimitor)
+strings = ["ab", "cd", "ef"]
+print("".join(strings))
