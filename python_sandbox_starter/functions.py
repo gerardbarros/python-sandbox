@@ -18,3 +18,34 @@ print(num)
 getSum = lambda num1, num2 : num1 + num2
 
 print(getSum(10, 5))
+
+
+# Nested functions
+# have access to outer variables, helpful in recursive probs
+# can also keep code concise when doing graphs
+def outer(a, b):
+    c = "c"
+
+    def inner(): #wil have access to all vars in outer
+        return a + b + c
+    return inner()
+
+print(outer("q", "x"))
+
+# can modify obj but not reasssing vals unless use nonlocal keyword
+def double(arr, val): #double every val in arr and val that's not an arr
+    def helper():
+        # modifying arr works
+        for i, n in enumerate(arr):
+            arr[i] *= 2
+
+        # will only modify val in helper scope, so val *= 2
+        # to update val outside the helper scope, have to declare it as nonlocal val
+        nonlocal val
+        val *= 2
+    helper()
+    print(arr, val)
+
+numbers = [1, 2]
+val = 3
+double(numbers, val)
