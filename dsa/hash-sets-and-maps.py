@@ -4,7 +4,7 @@
 mySet = set()
 mySet.add(1)
 mySet.add(2)
-print(mySet)
+print(f"First set: {mySet}")
 print(len(mySet))
 
 # check for vals in hash set
