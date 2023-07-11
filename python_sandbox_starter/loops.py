@@ -50,4 +50,4 @@ for n in nums:
 
 # With index and val (enumerate)
 for i, n in enumerate(nums):
-    print(f"Index: {i}, Element: {n}")
+    print(f"Index is {i}, Element is {n}")
